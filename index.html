@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onkeyup="keyCheck(event)">
+    <div class="loaderScreen" id="loaderScreen">
+        <img class="loader" src="Bean Eater-1s-200px.svg" />
+    </div>
+
+    <div class="startGamePage" id="startGamePage">
+
+        <div class="navContainer">
+            <div class="nav">
+                <div class="profile-rank flexRowCenter">
+                    <div class="profile flexRowCenter">
+                        <img src="./page-assets/profileImage.svg" alt="" class="profileImage">
+                        <div class="profileInfoContainer flexColStart">
+                            <span class="playerProfileName" id="playerProfileName">Lakindu</span>
+                            <span class="playerHScore" id="playerHScore">H-Score : 50</span>
+                        </div>
+
+
+                    </div>
+
+                    <span class="divider"></span>
+                    <div class="rank" id="rank">
+                        
+                    </div>
+
+
+                </div>
+                <div class="contact flexRowCenter">
+                    <span class="contactImageContainer">
+                        <img class="contactSvgs" src="page-assets/bell-01.svg" />
+                    </span>
+                    <span class="contactImageContainer">
+                        <img class="contactSvgs" src="page-assets/message-typing.svg" />
+                    </span>
+                </div>
+            </div>
+            <div class="signOut" id="signOut">
+                Sign Out
+            </div>
+
+        </div>
+        
+
+
+
+        <div class="avatar-leaderBoard-section flexRowCenter">
+            <div class="avatarContainer-section">
+                <div class="avatarContainer flexColCenter">
+
+                    <div class="avatarNameTag">
+                        <button id="prevCharacter" class="btn-changeCharacter"><img src="page-assets/nextLeft.svg" alt=""></button>
+                        <span class="characterName" id="characterName"></span>
+                        <button id="nextCharacter" class="btn-changeCharacter"><img src="page-assets/nextRight.svg" alt=""></button>
+                    </div>
+
+                    <div class="characterContainer flexColCenter">
+                        <div class="avatarAnimated">
+                            <img id="avatar" src="game-assets/idle/Idle__002.png" alt="" class="avatar">
+
+                        </div>
+                        <img src="page-assets/stand.svg" alt="" class="characterStand">
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="leaderBoard-button-section">
+                <div class="leaderBoardContainer">
+                    <span class="leaderBoardText flexRowCenter">Leaderboard</span>
+                    <div class="leaderBoard-playerScores" id="leaderBoard-playerScores">
+
+                    </div>
+                </div>
+                <div class="startGameBtnContainer">
+                    <button id="startGame" class="startGamePage-btn-startGame flexRowCenter ">Start Game <img class="arrow"
+                        src="page-assets/arrow.svg" /></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="login" id="login">
+      
+
+        <div class="titleContainer">
+            <div class="gameTitle" id="gameTitle">Lunar Labyrinth</div>
+        </div>
+        <div class="formContainer" id="formContainer">
+            <form class="playerForm" id="playerForm">
+                <input type="text" class="playerName" id="name" placeholder="Enter Name" required>
+                <div class="btnContainer"><button class=" btn-startGame">Log In <img class="arrow"
+                            src="page-assets/arrow.svg" /></button></div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="game-canvas">
+        <div class="background " id="background">
+            <div class="gameProgressBar">
+                <div class="score" id="score"></div>
+                <div class="playerHealthContainer">
+                    <div class="playerHealth" id="playerHealth"></div>
+                </div>
+            </div>
+            <img src="game-assets/run/Run (1).png" alt="" class="boy" id="boy">
+            <div class="gameOverContainer " id="gameOverContainer ">
+                <div class="gameOver" id="gameOver">
+                    <div>Game Over</div>
+                    <div class="">Your score</div>
+                    <div id="endScore" class="endScore ">0</div>
+                    <button onclick="re()" class="btn">Try again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
